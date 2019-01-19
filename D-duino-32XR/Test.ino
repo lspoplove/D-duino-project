@@ -73,7 +73,7 @@ void loop() {
     newState = digitalRead(BUTTON_PRESS);
     if (newState == LOW) {
       showType++;
-      if (showType > 9)
+      if (showType > 6)
         showType=0;
       startShow(showType);
     }
@@ -168,12 +168,13 @@ void startShow(int i) {
             break;
     case 6: theaterChase(strip.Color(  0,   0, 127), 50); // Blue
             break;
+     /*
     case 7: rainbow(20);
             break;
     case 8: rainbowCycle(20);
             break;
     case 9: theaterChaseRainbow(50);
-            break;
+            break;*/
   }
 }
 
