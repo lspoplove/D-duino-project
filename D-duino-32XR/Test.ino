@@ -74,7 +74,7 @@ void loop() {
     if (newState == LOW) {
       showType++;
       if (showType > 6)
-        showType=0;
+        showType=1;
       startShow(showType);
     }
   }
