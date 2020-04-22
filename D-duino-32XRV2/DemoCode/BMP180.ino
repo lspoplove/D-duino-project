@@ -11,8 +11,7 @@
 #define PIXEL_COUNT 1
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(PIXEL_COUNT, PIXEL_PIN, NEO_GRB + NEO_KHZ800);
-bool oldState = HIGH;
-int showType = 0;
+
 
 Adafruit_BMP085 bmp;
 SH1106  display(0x3c,4,5);
